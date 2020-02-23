@@ -1,4 +1,6 @@
-/* Header */
+/*********************
+        Header
+**********************/
 header{
     display: flex;
     flex-direction: row;
@@ -38,10 +40,37 @@ h1{
     margin: 0 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 28px;
+    font-weight: bolder;
 }
 
+/*********************
+        Footer
+**********************/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: 50px;
+    width: 100%;
+    color: #777777;
+    border-top: 8px solid #cccccc;
+}
 
-/* Main Content */
+footer p{
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #777777;
+
+}
+
+/*********************
+        About Me
+**********************/
 
 body{
     background: url(/w-1/hw1/mySol/Portfolio-HTML-CSS/assets/images/darkness.png);
@@ -49,18 +78,27 @@ body{
 
 hr{
     border: #cccccc solid 1px;
+    border-radius: 50%;
     width: 100%;
+    margin-bottom: 20px;
 }
 
-.main-content{
+.main{
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 50px);
+}
+
+.mainContent{
     background: #ffffff;
     border: #dddddd solid 1px;
     padding: 20px;
     width: 960px;
     margin: 30px auto 30px auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    /* flex: 1 0 auto; */
+    justify-content: center;
 }
 
 h2{
@@ -75,6 +113,7 @@ h2{
     height: 250px;
     width: 250px;
     margin: 20px auto ;
+    border-radius: 50%;
 }
 
 .aboutContent p{
@@ -83,34 +122,60 @@ h2{
     color: #777777;
 }
 
-/* Footer */
-footer{
+/*********************
+        contact
+**********************/
+.info{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* position: absolute;
-    bottom: 0; */
-    background: white;
-    height: 50px;
-    width: 100%;
-    color: #777777;
-    /* flex-shrink: 0; */
-    border-top: 8px solid #cccccc;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-footer p{
-    margin: 0 20px;
+input{
+    height: 30px;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    background: #cccccc;
+}
+
+label{
     font-family: Arial, Helvetica, sans-serif;
-}
-
-footer p a{
-    text-decoration: none;
     color: #777777;
-
+}
+/*********************
+        Portfolio
+**********************/
+.portfolioContent{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
 }
 
-/* About */
+.work-box{
+   
+}
 
-/* contact */
+.work-img{
+    width: 300px;
+    height: 200px;
+}
 
-/* Portfolio */
+h3{
+    height: 50px;
+    background: #cccccc;
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+
+}
