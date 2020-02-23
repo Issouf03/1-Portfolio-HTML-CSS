@@ -72,7 +72,7 @@ a{
 **********************/
 
 body{
-    background: url(/w-1/hw1/mySol/Portfolio-HTML-CSS/assets/images/darkness.png);
+    background: url(../images/darkness.png);
 }
 
 hr{
