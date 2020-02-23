@@ -65,7 +65,6 @@ footer p{
 a{
     text-decoration: none;
     color: #777777;
-
 }
 
 /*********************
@@ -94,8 +93,8 @@ hr{
     border: #dddddd solid 1px;
     padding: 20px;
     width: 960px;
-    margin: 30px auto 30px auto;
     height: 100%;
+    margin: 40px auto 40px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,10 +156,6 @@ label{
     align-items: center;
 }
 
-.work-box{
-   
-}
-
 .work-img{
     width: 300px;
     height: 200px;
@@ -179,3 +174,10 @@ h3{
     font-weight: bolder;
 
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .portfolioContent{
+        width: 50%;
+    }
+  }
